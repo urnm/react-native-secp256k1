@@ -6,7 +6,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:fingera/react-native-secp256k1.git"
+    "url": "git@github.com:LedgerHQ/react-native-secp256k1.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,7 +16,7 @@
     "secp256k1",
     "bitcoin"
   ],
-  "author": "liuyujun",
+  "author": "ledger",
   "license": "MIT",
   "peerDependencies": {
     "react-native": "^0.41.2"
