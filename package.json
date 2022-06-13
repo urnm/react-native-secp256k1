@@ -1,6 +1,6 @@
 {
-  "name": "@ledgerhq/react-native-secp256k1",
-  "version": "1.0.7",
+  "name": "rn-secp256k1",
+  "version": "1.0.0",
   "description": "bitcoin-core/secp256k1 working with react-native",
   "main": "index.js",
   "repository": {
