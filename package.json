@@ -1,11 +1,11 @@
 {
-  "name": "rn-secp256k1",
-  "version": "1.0.0",
+  "name": "urnm-rn-secp256k1",
+  "version": "1.0.1",
   "description": "bitcoin-core/secp256k1 working with react-native",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:LedgerHQ/react-native-secp256k1.git"
+    "url": "git@github.com:urnm/react-native-secp256k1.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +15,7 @@
     "secp256k1",
     "bitcoin"
   ],
-  "author": "ledger",
+  "author": "urnm",
   "license": "MIT",
   "peerDependencies": {
     "react-native": ">=0.60.0-rc.0 <1.0.x"
