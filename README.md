@@ -21,7 +21,7 @@
 
 #### Android
 
-1. Open up `android/app/src/main/java/[...]/MainActivity.java`
+1. Open up `android/app/src/main/java/[...]/MainApplication.java`
   - Add `import com.reactlibrary.RNSecp256k1Package;` to the imports at the top of the file
   - Add `new RNSecp256k1Package()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
@@ -31,7 +31,7 @@
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-secp256k1')
+      implementation project(':react-native-secp256k1')
   	```
 
 
@@ -66,4 +66,3 @@ main().then(() => {
 });
 
 ```
-  
