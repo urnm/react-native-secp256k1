@@ -1,5 +1,5 @@
 {
-  "name": "urnm-rn-secp256k1",
+  "name": "uranium-react-native-secp256k1",
   "version": "1.0.2",
   "description": "bitcoin-core/secp256k1 working with react-native",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "url": "git+https://github.com/urnm/react-native-secp256k1.git"
   },
   "publishConfig": {
-    "@urnm:registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
