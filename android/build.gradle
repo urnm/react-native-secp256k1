@@ -1,25 +1,26 @@
 
 buildscript {
     repositories {
-        jcenter()
+        mavenCentral()
+        google()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.android.tools.build:gradle:7.2.2'
     }
 }
 
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion '27.0.3'
+    compileSdkVersion 30
+    buildToolsVersion '30.0.3'
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 2
+        versionName "1.0.2"
     }
     lintOptions {
         abortOnError false
@@ -38,14 +39,20 @@ android {
             path "CMakeLists.txt"
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    ndkVersion '25.1.8937393'
 }
 
 repositories {
     mavenCentral()
+    google()
 }
 
 dependencies {
     implementation 'com.facebook.react:react-native:+'
-    implementation 'com.google.guava:guava:27.0.1-android'
+    implementation 'com.google.guava:guava:31.1-jre'
 }
   

@@ -1,13 +1,15 @@
 
-# react-native-secp256k1
+# uranium-react-native-secp256k1
 
 ## Getting started
 
-`$ npm install react-native-secp256k1 --save`
+`npm install uranium-react-native-secp256k1 --save`
+
+`yarn add uranium-react-native-secp256k1 --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-secp256k1`
+`react-native link uranium-react-native-secp256k1`
 
 ### Manual installation
 
@@ -15,7 +17,7 @@
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-secp256k1` and add `RNSecp256k1.xcodeproj`
+2. Go to `node_modules` ➜ `uranium-react-native-secp256k1` and add `RNSecp256k1.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNSecp256k1.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
 
@@ -26,18 +28,18 @@
   - Add `new RNSecp256k1Package()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-secp256k1'
-  	project(':react-native-secp256k1').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-secp256k1/android')
+  	include ':uranium-react-native-secp256k1'
+  	project(':uranium-react-native-secp256k1').projectDir = new File(rootProject.projectDir, 	'../node_modules/uranium-react-native-secp256k1/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      implementation project(':react-native-secp256k1')
+      implementation project(':uranium-react-native-secp256k1')
   	```
 
 
 ## Usage
 ```javascript
-import secp256k1 from 'react-native-secp256k1';
+import secp256k1 from 'uranium-react-native-secp256k1';
 
 async function main() {
 	const privA = await secp256k1.ext.generateKey();
