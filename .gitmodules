@@ -1,4 +1,0 @@
-[submodule "external/secp256k1"]
-	path = external/secp256k1
-	url = git@github.com:ACINQ/secp256k1.git
-	branch = "master"
